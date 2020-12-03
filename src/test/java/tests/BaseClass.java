@@ -8,7 +8,6 @@ import utils.CustomWatcher;
 
 import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static java.util.ResourceBundle.clearCache;
-import static utils.HTTP.clearCookies;
 import static utils.HTTP.getWebAppUrl;
 
 @ExtendWith(CustomWatcher.class)
