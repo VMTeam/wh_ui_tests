@@ -1,4 +1,5 @@
-**Open in IntelliJ IDEA and wait while gradle doesn't stop configure project.**
+* **Clone project**
+* **Open in IntelliJ IDEA and wait while gradle doesn't stop configure project.**
 
 ### Environment
 #### For local test
@@ -22,3 +23,5 @@
 ### Run
 
 * `./gradlew test allureReport`
+
+* Generated Allure report `/build/reports/allure-report`
