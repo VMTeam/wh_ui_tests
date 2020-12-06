@@ -15,7 +15,7 @@ public class PageObjects {
                 LOGIN_POPUP_PASS_FIELD = $(byAttribute("data-testid", "UI_KIT_INPUT")),
                 LOGIN_POPUP_CONTINUE_BUTTON = $(byAttribute("data-testid", "auth-continue-button")),
                 LOGIN_POPUP_LOGIN_BUTTON = $(byAttribute("data-testid", "auth-login-button")),
-                CAPTCHA_CHECKBOX = $("#recaptcha-anchor");
+                LOGIN_POPUP_SEND_LOGIN_BUTTON = $(byAttribute("data-testid", "auth-login-button"));
     }
 
     public static class NavigateMenu {

@@ -23,7 +23,7 @@ public class ExampleSteps extends BaseMethods {
     public void signInSystem(String EMAIL, String PASS) {
         sendKeysToElement(LoginPopup.LOGIN_POPUP_EMAIL_FIELD, EMAIL);
         clickOnElement(LoginPopup.LOGIN_POPUP_CONTINUE_BUTTON);
-        elementShouldBeVisible(LoginPopup.LOGIN_POPUP_PASS_FIELD);
+        elementShouldBeVisible(LoginPopup.LOGIN_POPUP_SEND_LOGIN_BUTTON);
         clickOnElement(LoginPopup.LOGIN_POPUP_PASS_FIELD);
         sendKeysToElement(LoginPopup.LOGIN_POPUP_PASS_FIELD, PASS);
         clickOnElement(LoginPopup.LOGIN_POPUP_LOGIN_BUTTON);
