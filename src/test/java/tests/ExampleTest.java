@@ -37,8 +37,11 @@ public class ExampleTest extends BaseClass {
     @Test
     @Order(2)
     public void test02_Delete_Shopping_List() {
+        ExampleSteps.assertVisibleLoginPopup();
+        ExampleSteps.signInSystem(AUTH_USER_EMAIL, AUTH_USER_PASS);
+        ExampleSteps.assertSuccessfullySignIn(AUTH_USER_EMAIL);
         ExampleSteps.switchToShoppingPage();
         ExampleSteps.createNewShoppingList("Delete List", "Delete List", "Shopping List1");
-        ExampleSteps.deleteShoppingList( "Shopping List1");
+        ExampleSteps.deleteShoppingList("Shopping List1");
     }
 }

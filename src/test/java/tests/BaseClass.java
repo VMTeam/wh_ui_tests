@@ -7,8 +7,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import utils.CustomWatcher;
 
 import static com.codeborne.selenide.Selenide.executeJavaScript;
-import static java.util.ResourceBundle.clearCache;
 import static utils.HTTP.getWebAppUrl;
+import static utils.HTTP.clearCookies;
 
 @ExtendWith(CustomWatcher.class)
 public class BaseClass {
@@ -20,7 +20,7 @@ public class BaseClass {
 
     @BeforeEach
     public void beforeBase() {
-        clearCache();
+        clearCookies();
     }
 
     @AfterEach

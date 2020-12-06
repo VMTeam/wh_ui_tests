@@ -17,7 +17,7 @@ public class SelenoidWebDriverProvider implements WebDriverProvider {
     @Override
     public WebDriver createDriver(DesiredCapabilities capabilities) {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox", "--disable-infobars", "--disable-save-password-bubble", "--disable-recaptcha");
+        options.addArguments("--no-sandbox", "--disable-infobars", "--disable-save-password-bubble");
         DesiredCapabilities browser = new DesiredCapabilities();
         browser.setBrowserName("chrome");
         browser.setVersion("86.0");
